@@ -27,7 +27,7 @@ const Deck = sequelize.define(
     },
   },
   {
-    timestamps: false, // adds createdAt and updatedAt fields);
+    timestamps: false,
   }
 );
 

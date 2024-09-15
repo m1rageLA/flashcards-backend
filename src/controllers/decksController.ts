@@ -2,11 +2,21 @@ import { Request, Response } from "express";
 import Deck from "../models/deck";
 import { where } from "sequelize";
 
-//----------  GET  -----------
+//----------  GET All -----------
 export const getAllDecks = async (req: Request, res: Response) => {
   try {
     const decks = await Deck.findAll();
     res.json(decks);
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch decks" });
+  }
+};
+//----------  GET One -----------
+export const getOneDeck = async (req: Request, res: Response) => {
+  try {
+    const deckId = req.params.id;
+    const deck = await Deck.findOne({ where: { id: deckId } });
+    res.json(deck);
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch decks" });
   }
@@ -62,7 +72,7 @@ export const updateDeck = async (req: Request, res: Response) => {
       res.status(404).json({ error: `Deck with ID ${deckId} not found.` });
     }
   } catch (error: any) {
-    console.error("Error updating deck:", error); 
+    console.error("Error updating deck:", error);
     return res.status(500).json({
       error: "An error occurred while updating the deck",
       details: error.message,
