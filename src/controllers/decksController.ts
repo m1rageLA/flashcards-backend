@@ -28,12 +28,30 @@ export const createDeck = async (req: Request, res: Response) => {
     return res.status(201).json(deck);
   } catch (error: any) {
     console.error("Error creating deck:", error); // Log the error for debugging
-    return res
-      .status(500)
-      .json({
-        error: "An error occurred while creating the deck",
-        details: error.message,
-      });
+    return res.status(500).json({
+      error: "An error occurred while creating the deck",
+      details: error.message,
+    });
   }
 };
 
+export const deleteDeck = async (req: Request, res: Response) => {
+  try {
+    const deckId = req.params.id;
+
+    const deleteDeck = await Deck.destroy({
+      where: { id: deckId },
+    });
+
+    if (deleteDeck) {
+      res
+        .status(200)
+        .json({ message: `Deck with ID ${deckId} deleted successfully.` });
+    } else {
+      res.status(404).json({ error: `Deck with ID ${deckId} not found.` });
+    }
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Error deleting the deck." });
+  }
+};
