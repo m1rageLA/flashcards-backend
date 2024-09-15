@@ -1,6 +1,8 @@
 import { Request, Response } from "express";
 import Deck from "../models/deck";
+import { where } from "sequelize";
 
+//----------  GET  -----------
 export const getAllDecks = async (req: Request, res: Response) => {
   try {
     const decks = await Deck.findAll();
@@ -10,6 +12,7 @@ export const getAllDecks = async (req: Request, res: Response) => {
   }
 };
 
+//----------  POST  -----------
 export const createDeck = async (req: Request, res: Response) => {
   try {
     const { title, level, language, length } = req.body;
@@ -35,6 +38,39 @@ export const createDeck = async (req: Request, res: Response) => {
   }
 };
 
+//----------  PUT  -----------
+export const updateDeck = async (req: Request, res: Response) => {
+  try {
+    const deckId = req.params.id;
+    const { title, level, language, length } = req.body;
+    // Validate required fields
+    if (!title || !level || !language || !length) {
+      return res
+        .status(400)
+        .json({ error: "Title, level, length and language are required" });
+    }
+
+    const updateDeck = await Deck.update(
+      { title, level, language, length },
+      { where: { id: deckId } }
+    );
+    if (updateDeck) {
+      res.status(200).json({
+        message: `Deck with ID ${deckId} has been successfully updated.`,
+      });
+    } else {
+      res.status(404).json({ error: `Deck with ID ${deckId} not found.` });
+    }
+  } catch (error: any) {
+    console.error("Error updating deck:", error); 
+    return res.status(500).json({
+      error: "An error occurred while updating the deck",
+      details: error.message,
+    });
+  }
+};
+
+//----------  DELETE  -----------
 export const deleteDeck = async (req: Request, res: Response) => {
   try {
     const deckId = req.params.id;
