@@ -7,7 +7,6 @@ export const getFlashcards = async (req: Request, res: Response) => {
     res.json(flashcards);
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch flashcards" });
-    res.status(500).json({ error: "Failed to fetch flashcards" });
   }
 };
 
