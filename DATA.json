@@ -1,0 +1,362 @@
+[
+  {
+    "title": "Greetings and farewells",
+    "level": "A1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Personal information",
+    "level": "A1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Family members",
+    "level": "A1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Colors and shapes",
+    "level": "A1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Numbers and time",
+    "level": "A1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Days of the week and months",
+    "level": "A1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Weather",
+    "level": "A1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Food and drinks",
+    "level": "A1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Basic verbs",
+    "level": "A1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Clothing",
+    "level": "A1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Transportation",
+    "level": "A2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Occupations",
+    "level": "A2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "House and rooms",
+    "level": "A2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Food and cooking",
+    "level": "A2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Health and body",
+    "level": "A2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Daily life",
+    "level": "A2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Hobbies and interests",
+    "level": "A2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Stative verbs",
+    "level": "A2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Friends and relationships",
+    "level": "A2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Nature",
+    "level": "A2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Shopping",
+    "level": "B1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Travel",
+    "level": "B1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Healthy lifestyle",
+    "level": "B1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Education and studies",
+    "level": "B1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Media and news",
+    "level": "B1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Sports and fitness",
+    "level": "B1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Work and career",
+    "level": "B1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Social media and internet",
+    "level": "B1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Movies and music",
+    "level": "B1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Pets",
+    "level": "B1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Technology and innovation",
+    "level": "B2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Economics and finance",
+    "level": "B2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Politics and government",
+    "level": "B2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Ecology and environment",
+    "level": "B2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Culture and art",
+    "level": "B2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Communication and interaction",
+    "level": "B2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "International relations",
+    "level": "B2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Science and discoveries",
+    "level": "B2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Literature and books",
+    "level": "B2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Philosophy and thinking",
+    "level": "B2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Psychology and emotions",
+    "level": "C1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Intercultural communication",
+    "level": "C1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Law and jurisprudence",
+    "level": "C1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Business and entrepreneurship",
+    "level": "C1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Medicine and health",
+    "level": "C1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "History and society",
+    "level": "C1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Scientific research and technology",
+    "level": "C1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Labor and social rights",
+    "level": "C1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Travel and tourism",
+    "level": "C1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Contemporary art and culture",
+    "level": "C1",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Philosophical debates",
+    "level": "C2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Modern global issues",
+    "level": "C2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Economic theory",
+    "level": "C2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Linguistics and language theory",
+    "level": "C2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Political philosophy",
+    "level": "C2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Scientific revolutions and discoveries",
+    "level": "C2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Critical thinking",
+    "level": "C2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Theater and cinema",
+    "level": "C2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Sociology and anthropology",
+    "level": "C2",
+    "language": "en",
+    "length": null
+  },
+  {
+    "title": "Technological progress and its impact",
+    "level": "C2",
+    "language": "en",
+    "length": null
+  }
+]

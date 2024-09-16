@@ -25,20 +25,39 @@ export const getOneDeck = async (req: Request, res: Response) => {
 //----------  POST  -----------
 export const createDeck = async (req: Request, res: Response) => {
   try {
-    const { title, level, language, length } = req.body;
+    const decks = req.body;
+    if (Array.isArray(decks)) {
+      for (const deck of decks) {
+        const { title, level, language, length } = deck;
+        if (!title || !level || !language || length === undefined) {
+          return res.status(400).json({
+            error:
+              "Each deck object must have title, level, language, and length",
+          });
+        }
+        const createdDecks = await Deck.bulkCreate(decks);
+        return res.status(201).json(createdDecks);
+      }
+    } else if (
+      typeof decks === "object" &&
+      decks !== null &&
+      !Array.isArray(decks)
+    ) {
+      const { title, level, language, length } = req.body;
 
-    // Validate required fields
-    if (!title || !level || !language || !length) {
-      return res
-        .status(400)
-        .json({ error: "Title, level, length and language are required" });
+      // Validate required fields
+      if (!title || !level || !language) {
+        return res
+          .status(400)
+          .json({ error: "Title, level, length and language are required" });
+      }
+
+      // Create the deck using the destructured values
+      const deck = await Deck.create({ title, level, language, length });
+
+      // Respond with the newly created deck
+      return res.status(201).json(deck);
     }
-
-    // Create the deck using the destructured values
-    const deck = await Deck.create({ title, level, language, length });
-
-    // Respond with the newly created deck
-    return res.status(201).json(deck);
   } catch (error: any) {
     console.error("Error creating deck:", error); // Log the error for debugging
     return res.status(500).json({

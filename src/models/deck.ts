@@ -23,7 +23,6 @@ const Deck = sequelize.define(
     },
     length: {
       type: DataTypes.INTEGER,
-      allowNull: false,
     },
   },
   {
