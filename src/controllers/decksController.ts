@@ -21,6 +21,18 @@ export const getOneDeck = async (req: Request, res: Response) => {
     res.status(500).json({ error: "Failed to fetch decks" });
   }
 };
+//----------  GET All by level -----------
+export const getAllDecksByLevel = async (req: Request, res: Response) => {
+  try {
+    const level = req.params.level;
+    const decks = await Deck.findAll({ where: { level: level } });
+    res.json(decks);
+  } catch (error: any) {
+    res
+      .status(500)
+      .json({ error: "Failed to fetch decks", details: error.message });
+  }
+};
 
 //----------  POST  -----------
 export const createDeck = async (req: Request, res: Response) => {
