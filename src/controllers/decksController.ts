@@ -1,6 +1,5 @@
 import { Request, Response } from "express";
 import Deck from "../models/deck";
-import { where } from "sequelize";
 
 //----------  GET All -----------
 export const getAllDecks = async (req: Request, res: Response) => {
@@ -24,7 +23,8 @@ export const getOneDeck = async (req: Request, res: Response) => {
 //----------  GET All by level -----------
 export const getAllDecksByLevel = async (req: Request, res: Response) => {
   try {
-    const level = req.params.level;
+    let level = req.params.level;
+    level = level.toUpperCase();
     const decks = await Deck.findAll({ where: { level: level } });
     res.json(decks);
   } catch (error: any) {

@@ -30,4 +30,5 @@ const Deck = sequelize.define(
   }
 );
 
+
 export default Deck;
